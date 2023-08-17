@@ -6,7 +6,7 @@ import {
     git,
     figma,
     docker,
-    threejs, angular, vue, mysql, aws, mizule
+    threejs, angular, vue, mysql, aws, mizule, impact, ar
 } from "../assets";
 
 export const technologies = [
@@ -67,103 +67,62 @@ export const projects = [
             "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
         tags: [
             {
-                name: "React Native",
+                name: "Native Android",
                 color: "blue-text-gradient",
             },
             {
-                name: "Postgres",
+                name: "PostgreSQL",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Springboot",
                 color: "pink-text-gradient",
             },
         ],
         image: mizule,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lohithsrk/Mizule.git",
     },
     {
-        name: "Mizule",
+        name: "Impact Podcast",
         description:
             "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
         tags: [
             {
-                name: "React Native",
+                name: "ReactJS",
                 color: "blue-text-gradient",
             },
             {
-                name: "Postgres",
+                name: "Tailwind CSS",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Firebase",
                 color: "pink-text-gradient",
             },
         ],
-        image: mizule,
-        source_code_link: "https://github.com/",
+        image: impact,
+        source_code_link: "https://impactpodcast.in/",
     },
     {
-        name: "Mizule",
+        name: "Andhaadhi Rehab",
         description:
-            "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
+            "One of India’s most trusted and leading teletherapy hub for Speech therapy, Occupational therapy and special education services.",
         tags: [
             {
-                name: "React Native",
+                name: "ReactJS",
                 color: "blue-text-gradient",
             },
             {
-                name: "Postgres",
+                name: "NodeJS",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Jsonwebtoken",
                 color: "pink-text-gradient",
             },
         ],
-        image: mizule,
-        source_code_link: "https://github.com/",
+        image: ar,
+        source_code_link: "https://andhaadhirehab.in/",
     },
-    {
-        name: "Mizule",
-        description:
-            "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
-        tags: [
-            {
-                name: "React Native",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Postgres",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: mizule,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Mizule",
-        description:
-            "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
-        tags: [
-            {
-                name: "React Native",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Postgres",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: mizule,
-        source_code_link: "https://github.com/",
-    },
+
 ];

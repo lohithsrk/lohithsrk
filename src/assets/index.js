@@ -19,6 +19,8 @@ import aws from "./tech/aws.png";
 import github from "./github.png";
 
 import mizule from "./projects/mizule.png";
+import impact from "./projects/impact.png";
+import ar from "./projects/ar.png";
 
 export {
   mizule,
@@ -38,5 +40,5 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs, angular
+  threejs, angular, impact,ar
 };

@@ -7,56 +7,54 @@ import { Link } from 'react-scroll';
 
 const services = [
   {
-    name: 'Full stack development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est explicabo corrupti consequatur necessitatibus molestiae unde',
-    link: 'Learn more'
+    name: 'Web Development',
+    description: 'Transforming concepts into responsive websites. User-centric design and smooth functionality for immersive online experiences.',
   },
   {
-    name: 'Full stack development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est explicabo corrupti consequatur necessitatibus molestiae unde',
-    link: 'Learn more'
+    name: 'Mobile Application Development',
+    description: 'Shaping captivating mobile realms with React Native and Flutter, infusing ideas into pixels, and making screens come alive.',
   },
   {
-    name: 'Full stack development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est explicabo corrupti consequatur necessitatibus molestiae unde',
-    link: 'Learn more'
+    name: 'Technical Consulting',
+    description: 'Strategic guidance and expert insights to optimize project planning, architecture, and technology selection.',
   },
   {
-    name: 'Full stack development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est explicabo corrupti consequatur necessitatibus molestiae unde',
-    link: 'Learn more'
+    name: 'Deployment and DevOps',
+    description: 'Transforming code into live experiences with cloud-powered deployment and precision orchestration for seamless launches.',
   },
 ]
 
 const Services = () => {
   return (
-    <section className='section' id='services'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row'>
-          <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.3 }} className='flex-1 lg:bg-services bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent mb-6'>What I Do.</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a full stack developer
-            </h3>
-            <button className='btn btn-sm'>See my work</button>
+    <section className='section px-5' id='services'>
+      <div className='container mx-auto '>
+        <div className='flex flex-col lg:flex-row h-full'>
+          <motion.div variants={fadeIn('right', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
+            whileInView='show' viewport={{ once: false, amount: 0.3 }} className='flex-1 bg-bottom bg-no-repeat mix-blend-lighten md:mb-12 lg:mb-0'>
+            <h2 className='h2 text-accent mb-6 md:text-left text-center'>What I Do.</h2>
+            <motion.ul variants={fadeIn('right', 0.3)}
+              initial={window.innerWidth > 768 ? 'hidden' : null}
+
+              whileInView='show'
+              viewport={{ once: false, amount: 0 }}
+              className='mb-8 max-w-lg mx-auto lg:mx-0 text-lg'>
+              <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Proficient Full Stack Developer specializing in web and mobile app experiences.</span></motion.li>
+              <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Frontend and backend expertise for user-friendly interfaces and dynamic features.</span></motion.li>
+              <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Secure API creation and integration.</span></motion.li>
+              <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Skilled in deployment orchestration for seamless launches.</span></motion.li>
+              <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Dedicated to crafting digital solutions with lasting impact.</span></motion.li>
+            </motion.ul>
           </motion.div>
-          <motion.div className='flex-1' variants={fadeIn('left', 0.5)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.3 }} >
+          <motion.div className='flex-1' variants={fadeIn('left', 0.5)} initial={window.innerWidth > 768 ? 'hidden' : null}
+            whileInView='show' viewport={{ once: false, amount: 0.3 }} >
             <div>
               {services.map((service, index) => { // destructure service
-                const { name, description, link } = service;
+                const { name, description } = service;
                 return (
-                  <div key={index} className='border-b border-white/20 h-[146px] mb-[38px] flex '>
+                  <div key={index} className='border-b border-white/20 h-[120px] flex items-center md:mb-auto mb-5'>
                     <div className='max-w-[476px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
-                      <p className='font-secondary leading-tight'>{description}</p>
-                    </div>
-                    <div className='flex flex-1 flex-col items-end '>
-                      <Link className='w-9 h-9 btn mb-[42px] items-center justify-center flex'>
-                        <BsArrowUpRight />
-                      </Link>
-                      <Link className='text-sm text-gradient'>
-                        {link}
-                      </Link>
+                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-3'>{name}</h4>
+                      <p className='font-secondary leading-tight md:mb-auto mb-5 text-left md:text-left'>{description}</p>
                     </div>
                   </div>
                 );

@@ -13,11 +13,11 @@ const App = () => {
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
-      <Nav />
       <About />
       <Services />
       <Work />
       <Contact />
+      <Nav />
     </div>
   );
 };

@@ -7,12 +7,15 @@ import { github } from '../assets';
 import { projects } from '../utils/data';
 
 const Work = () => {
-  return <div className='section' id='work'>
+  return <div className='section px-5' id='work'>
     <div className="container mx-auto">
 
-      <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0 }} >
-        <motion.h2 variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0 }} className='h2 text-accent'> MY PROJECTS </motion.h2>
-        <motion.p variants={fadeIn('up', 0.4)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0 }} className='mb-6'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</motion.p>
+      <motion.div variants={fadeIn('up', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
+        whileInView='show' viewport={{ once: false, amount: 0 }} >
+        <motion.h2 variants={fadeIn('up', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
+          whileInView='show' viewport={{ once: false, amount: 0 }} className='h2 text-accent text-center md:text-left'> MY PROJECTS </motion.h2>
+        <motion.p variants={fadeIn('up', 0.4)} initial={window.innerWidth > 768 ? 'hidden' : null}
+          whileInView='show' viewport={{ once: false, amount: 0 }} className='mb-6 text-left md:text-left'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</motion.p>
       </motion.div>
       <div className='mt-10 flex gap-7 overflow-x-scroll overflow-y-hidden scrollbar-hide'>
         {projects.map((project, index) => (
@@ -31,7 +34,6 @@ const ProjectCard = ({
   image,
   source_code_link
 }) => {
-  console.log(index);
   return (
     <motion.div variants={fadeIn('up', index * 0.2)}>
       <motion.div
@@ -40,7 +42,7 @@ const ProjectCard = ({
         //   scale: 1,
         //   speed: 450,
         // }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full bg-white/10 backdrop-blur-md'
+        className='bg-tertiary p-5 rounded-2xl w-[360px]  bg-white/10 backdrop-blur-md'
       >
         <div className='relative w-full h-[230px]'>
           <img

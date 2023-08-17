@@ -65,17 +65,17 @@ const Contact = () => {
 
   return (
     <div
-      className='section'
+      className='section px-5'
       id='contact'
     >
       <div className='container mx-auto flex'>
-        <div className='flex items-center justify-center w-full h-screen'>
+        <div className='flex items-center md:justify-center w-full md:h-screen'>
 
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className='w-1/2 ml-16'
+            className='w-full md:w-1/2 md:ml-16'
           >
-            <h2 className='h2 text-accent'>Get in touch</h2>
+            <h2 className='h2 text-accent text-center md:text-left'>Get in touch</h2>
 
             <form
               ref={formRef}
@@ -119,19 +119,18 @@ const Contact = () => {
 
               <button
                 type='submit'
-                className='btn btn-lg !max-w-min mt-3 cursor-pointer'
+                className='btn btn-lg md:!max-w-min w-full mt-3 cursor-pointer'
               >
                 {loading ? "Sending..." : "Send"}
               </button>
             </form>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
             className='h-[500px] w-[500px] pl-20'
           >
-            <EarthCanvas />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>
