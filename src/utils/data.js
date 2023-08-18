@@ -10,22 +10,22 @@ import {
 } from "../assets";
 
 export const technologies = [
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Angular",
-        icon: angular,
-    },
-    {
-        name: "Vue JS",
-        icon: vue,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
+    // {
+    //     name: "React JS",
+    //     icon: reactjs,
+    // },
+    // {
+    //     name: "Angular",
+    //     icon: angular,
+    // },
+    // {
+    //     name: "Vue JS",
+    //     icon: vue,
+    // },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
     {
         name: "Node JS",
         icon: nodejs,
