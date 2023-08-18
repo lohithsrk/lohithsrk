@@ -32,16 +32,19 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // process.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_dgg1ddb","template_7d8452r",
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Lohith",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "srklohith.pro@gmail.com",
+          reply_to: form.email,
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "DR6aSxrO1iU8l-Yx4"
+        // process.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -108,7 +111,6 @@ const Contact = () => {
                 <span className='text-white font-medium cursor-pointer'>Your Message</span>
                 <textarea
                   rows={5}
-
                   name='message'
                   value={form.message}
                   onChange={handleChange}
