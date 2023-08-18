@@ -85,7 +85,7 @@ export const projects = [
     {
         name: "Impact Podcast",
         description:
-            "Mizule is an amazing platform that allows Zulists to showcase their creative talent and create stunning visuals that will surely wow any audience.",
+            "\"Impact\" is a captivating student podcast that goes beyond the ordinary by showcasing in-depth interviews with seasoned industrial specialists.",
         tags: [
             {
                 name: "ReactJS",

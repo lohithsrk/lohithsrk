@@ -75,7 +75,7 @@ const Contact = () => {
             variants={slideIn("left", "tween", 0.2, 1)}
             className='w-full md:w-1/2 md:ml-16'
           >
-            <h2 className='h2 text-accent text-center md:text-left'>Get in touch</h2>
+            <h2 className='h2 text-accent text-center md:text-left mb-5'>Get in touch</h2>
 
             <form
               ref={formRef}
@@ -83,7 +83,7 @@ const Contact = () => {
               className='flex flex-col gap-2'
             >
               <label className='flex flex-col cursor-pointer'>
-                <span className='text-white font-medium mb-2 cursor-pointer'>Your Name</span>
+                <span className='text-white font-medium cursor-pointer'>Your Name</span>
                 <input
                   type='text'
                   name='name'
@@ -94,7 +94,7 @@ const Contact = () => {
                 />
               </label>
               <label className='flex flex-col cursor-pointer'>
-                <span className='text-white font-medium mb-2 cursor-pointer'>Your email</span>
+                <span className='text-white font-medium cursor-pointer'>Your email</span>
                 <input
                   type='email'
                   name='email'
@@ -105,7 +105,7 @@ const Contact = () => {
                 />
               </label>
               <label className='flex flex-col cursor-pointer'>
-                <span className='text-white font-medium mb-2 cursor-pointer'>Your Message</span>
+                <span className='text-white font-medium cursor-pointer'>Your Message</span>
                 <textarea
                   rows={5}
 

@@ -30,13 +30,13 @@ const Services = () => {
       <div className='container mx-auto '>
         <div className='flex flex-col lg:flex-row h-full'>
           <motion.div variants={fadeIn('right', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
-            whileInView='show' viewport={{ once: false, amount: 0.3 }} className='flex-1 bg-bottom bg-no-repeat mix-blend-lighten md:mb-12 lg:mb-0'>
+            whileInView='show' viewport={{ once: true, amount: 0.3 }} className='flex-1 bg-bottom bg-no-repeat mix-blend-lighten md:mb-12 lg:mb-0'>
             <h2 className='h2 text-accent mb-6 md:text-left text-center'>What I Do.</h2>
             <motion.ul variants={fadeIn('right', 0.3)}
               initial={window.innerWidth > 768 ? 'hidden' : null}
 
               whileInView='show'
-              viewport={{ once: false, amount: 0 }}
+              viewport={{ once: true, amount: 0 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0 text-lg'>
               <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Proficient Full Stack Developer specializing in web and mobile app experiences.</span></motion.li>
               <motion.li className='flex items-start mb-2'><span>&rarr;</span>&nbsp;<span>Frontend and backend expertise for user-friendly interfaces and dynamic features.</span></motion.li>
@@ -46,7 +46,7 @@ const Services = () => {
             </motion.ul>
           </motion.div>
           <motion.div className='flex-1' variants={fadeIn('left', 0.5)} initial={window.innerWidth > 768 ? 'hidden' : null}
-            whileInView='show' viewport={{ once: false, amount: 0.3 }} >
+            whileInView='show' viewport={{ once: true, amount: 0.3 }} >
             <div>
               {services.map((service, index) => { // destructure service
                 const { name, description } = service;

@@ -46,7 +46,7 @@ const BallCanvas = ({ icon, i }) => {
 			variants={fadeIn('up', 0.3 * i * 0.1)}
 			initial={window.innerWidth > 768 ? 'hidden' : null}
 			whileInView='show'
-			viewport={{ once: false, amount: 0 }}
+			viewport={{ once: true, amount: 0 }}
 			className='w-20 h-20'
 		>
 			<Canvas
@@ -55,7 +55,7 @@ const BallCanvas = ({ icon, i }) => {
 				gl={{ preserveDrawingBuffer: true }}
 			>
 				<Suspense fallback={<CanvasLoader />}>
-					{window.innerWidth > 768 && <OrbitControls enableZoom={false} />}
+					{/* {window.innerWidth > 768 && <OrbitControls enableZoom={false} />} */}
 					<Ball imgUrl={icon} />
 				</Suspense>
 

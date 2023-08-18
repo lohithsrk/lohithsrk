@@ -21,11 +21,12 @@ const Banner = () => {
               initial={window.innerWidth > 768 ? 'hidden' : null}
 
               whileInView='show'
-              viewport={{ once: false, amount: 0 }}
+              viewport={{ once: true, amount: 0 }}
               className='font-bold leading-[0.8] text-[80px] lg:text-[110px]' >LOHITH</motion.h1 >
             <motion.div
               variants={fadeIn('up', 0.4)}
               initial={window.innerWidth > 768 ? 'hidden' : null}
+              viewport={{ once: true, amount: 0 }}
 
               whileInView='show'
               className='mb-6 text-[36px] font-secondary font-semibold uppercase leading-[1] text-white'>
@@ -47,7 +48,7 @@ const Banner = () => {
               initial={window.innerWidth > 768 ? 'hidden' : null}
 
               whileInView='show'
-              viewport={{ once: false, amount: 0 }}
+              viewport={{ once: true, amount: 0 }}
               className='mb-4 max-w-lg mx-auto lg:mx-0 text-center md:text-left'>
               Experienced Full Stack and Android developer, creating engaging solutions. Proficient in various technologies, dedicated to crafting innovative experiences that leave a lasting impact.
             </motion.p>
@@ -55,7 +56,7 @@ const Banner = () => {
               variants={fadeIn('up', 0.6)}
               initial={window.innerWidth > 768 ? 'hidden' : null}
               whileInView='show'
-              viewport={{ once: false, amount: 0 }}
+              viewport={{ once: true, amount: 0 }}
               className='flex max-w-max gap-x-6 items-center mb-6 md:mb-6 mx-auto lg:mx-0 md:flex-row flex-col'>
               <Link to="contact" smooth={true}>
                 <button className='btn btn-lg mb-5 md:mb-0' >Contact me</button>
@@ -69,7 +70,7 @@ const Banner = () => {
               variants={fadeIn('up', 0.8)}
               initial={window.innerWidth > 768 ? 'hidden' : null}
               whileInView='show'
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='https://github.com/lohithsrk' target='_blank' className='cursor-pointer' rel='noreferrer'>
                 <IoLogoGithub className='cursor-pointer md:w-6 md:h-6 w-8 h-8' />
@@ -88,7 +89,7 @@ const Banner = () => {
             initial={window.innerWidth > 768 ? 'hidden' : null}
 
             whileInView='show'
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className='lg:flex flex-1 w-[500px] h-[500px] lg:max-w-[px]  md:visible hidden'>
             <EarthCanvas />
 

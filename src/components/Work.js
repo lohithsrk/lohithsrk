@@ -11,11 +11,11 @@ const Work = () => {
     <div className="container mx-auto">
 
       <motion.div variants={fadeIn('up', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
-        whileInView='show' viewport={{ once: false, amount: 0 }} >
+        whileInView='show' viewport={{ once: true, amount: 0 }} >
         <motion.h2 variants={fadeIn('up', 0.3)} initial={window.innerWidth > 768 ? 'hidden' : null}
-          whileInView='show' viewport={{ once: false, amount: 0 }} className='h2 text-accent text-center md:text-left'> MY PROJECTS </motion.h2>
+          whileInView='show' viewport={{ once: true, amount: 0 }} className='h2 text-accent text-center md:text-left'> MY PROJECTS </motion.h2>
         <motion.p variants={fadeIn('up', 0.4)} initial={window.innerWidth > 768 ? 'hidden' : null}
-          whileInView='show' viewport={{ once: false, amount: 0 }} className='mb-6 text-left md:text-left'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</motion.p>
+          whileInView='show' viewport={{ once: true, amount: 0 }} className='mb-6 text-left md:text-left'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</motion.p>
       </motion.div>
       <div className='mt-10 flex gap-7 overflow-x-scroll overflow-y-hidden scrollbar-hide'>
         {projects.map((project, index) => (
