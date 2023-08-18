@@ -5,27 +5,27 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    threejs, angular, vue, mysql, aws, mizule, impact, ar
+    docker, kotlin,
+    angular, vue, mysql, aws, mizule, impact, ar
 } from "../assets";
 
 export const technologies = [
-    // {
-    //     name: "React JS",
-    //     icon: reactjs,
-    // },
-    // {
-    //     name: "Angular",
-    //     icon: angular,
-    // },
-    // {
-    //     name: "Vue JS",
-    //     icon: vue,
-    // },
-    // {
-    //     name: "Three JS",
-    //     icon: threejs,
-    // },
+    {
+        name: "React JS",
+        icon: reactjs,
+    },
+    {
+        name: "Angular",
+        icon: angular,
+    },
+    {
+        name: "Vue JS",
+        icon: vue,
+    },
+    {
+        name: "Kotlin",
+        icon: kotlin,
+    },
     {
         name: "Node JS",
         icon: nodejs,
