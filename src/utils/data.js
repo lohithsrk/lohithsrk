@@ -10,18 +10,18 @@ import {
 } from "../assets";
 
 export const technologies = [
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Angular",
-        icon: angular,
-    },
-    {
-        name: "Vue JS",
-        icon: vue,
-    },
+    // {
+    //     name: "React JS",
+    //     icon: reactjs,
+    // },
+    // {
+    //     name: "Angular",
+    //     icon: angular,
+    // },
+    // {
+    //     name: "Vue JS",
+    //     icon: vue,
+    // },
     {
         name: "Kotlin",
         icon: kotlin,
@@ -38,10 +38,10 @@ export const technologies = [
         name: "MongoDB",
         icon: mongodb,
     },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
+    // {
+    //     name: "Redux Toolkit",
+    //     icon: redux,
+    // },
     {
         name: "git",
         icon: git,

@@ -18,9 +18,9 @@ import kotlin from "./tech/kotlin.webp";
 
 import github from "./github.png";
 
-import mizule from "./projects/mizule.png";
-import impact from "./projects/impact.png";
-import ar from "./projects/ar.png";
+import mizule from "./projects/mizule.webp";
+import impact from "./projects/impact.webp";
+import ar from "./projects/ar.webp";
 
 export {
   mizule,

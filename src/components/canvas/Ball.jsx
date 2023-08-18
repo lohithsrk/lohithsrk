@@ -59,7 +59,7 @@ const BallCanvas = ({ icon, i }) => {
 					<Ball imgUrl={icon} />
 				</Suspense>
 
-				<Preload all />
+				{/* <Preload all /> */}
 			</Canvas>
 		</motion.div>
 	);
