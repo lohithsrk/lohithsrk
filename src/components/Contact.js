@@ -32,8 +32,9 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.VITE_APP_EMAILJS_SERVICE_ID,
-        process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // process.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_dgg1ddb","template_7d8452r",
         {
           from_name: form.name,
           to_name: "Lohith",
@@ -42,7 +43,8 @@ const Contact = () => {
           reply_to: form.email,
           message: form.message,
         },
-        process.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "DR6aSxrO1iU8l-Yx4"
+        // process.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
