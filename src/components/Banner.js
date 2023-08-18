@@ -1,13 +1,10 @@
-import React, { Suspense, useRef } from 'react'
-import { OrbitControls, Preload, Stage, useGLTF } from "@react-three/drei";
+import React from 'react'
 import { IoLogoLinkedin, IoMdMail, IoLogoGithub } from 'react-icons/io';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
-import CanvasLoader from './Loader';
-import { Canvas } from '@react-three/fiber';
-import { EarthCanvas } from "./canvas";
+import { ComputersCanvas, EarthCanvas } from "./canvas";
 
 
 const Banner = () => {
@@ -83,17 +80,14 @@ const Banner = () => {
               </a>
             </motion.div>
           </div >
-          <motion.div
-
+          {/* <motion.div
             variants={fadeIn('down', 0.5)}
             initial={window.innerWidth > 768 ? 'hidden' : null}
-
             whileInView='show'
             viewport={{ once: true, amount: 0 }}
             className='lg:flex flex-1 w-[500px] h-[500px] lg:max-w-[px]  md:visible hidden'>
             <EarthCanvas />
-
-          </motion.div>
+          </motion.div> */}
         </div >
       </div >
     </section >);

@@ -1,6 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 
@@ -26,7 +24,7 @@ const Footer = () => {
                                 <IoMdMail className='cursor-pointer md:w-4 md:h-4 w-4 h-4' />
                             </a>
                         </div><span className='hidden md:block'>|</span>
-                        <div className='flex gap-x-3 my-2 md:my-0'>
+                        <div className='flex gap-x-3 my-2 md:my-0 md:ml-4'>
                             <a href='#home' smooth={true} spy={true} offset={-200} className='cursor-pointer font-primary !p-0 hover:footer-text-gradient transition-all text-xs  hover:!text-xs flex items-center justify-center' >
                                 Home      </a>
                             <a href='#about' smooth={true} spy={true} className='cursor-pointer font-primary !p-0 hover:footer-text-gradient text-xs hover:!text-xs transition-all  flex items-center justify-center' >

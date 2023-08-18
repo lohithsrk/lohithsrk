@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import Tilt from 'react-parallax-tilt'
 
 import { github } from '../assets';
 import { projects } from '../utils/data';
