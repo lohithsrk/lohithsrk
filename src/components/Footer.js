@@ -12,7 +12,7 @@ const Footer = () => {
                         lohith.pro
                     </Link>
                     <div
-                        className='flex text-[20px]  items-center md:flex-row flex-col-reverse '>
+                        className='flex text-[20px]  items-center md:flex-row flex-col-reverse'>
                         <div className='flex gap-x-6 mr-5'>
                             <a href='https://github.com/lohithsrk' target='_blank' className='cursor-pointer' rel='noreferrer'>
                                 <IoLogoGithub className='cursor-pointer md:w-4 md:h-4 w-4 h-4' />
