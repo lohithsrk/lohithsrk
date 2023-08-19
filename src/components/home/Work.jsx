@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
+import { fadeIn } from '../../variants';
 
-import { github } from '../assets';
-import { projects } from '../utils/data';
+import { github } from '../../assets';
+import { projects } from '../../utils/data';
 
 const Work = () => {
   return <div className='section px-5' id='work'>

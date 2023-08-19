@@ -1,10 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { slideIn } from "../utils/motion";
-import { EarthCanvas } from './canvas';
-import { fadeIn } from '../variants';
-
+import { slideIn } from "../../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
