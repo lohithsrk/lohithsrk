@@ -10,11 +10,11 @@ const Survey = () => {
 			<Helmet>
 				<title>SURVEY</title>
 				<meta
-					property='title'
+					name='title'
 					content='Empowering Your Fitness Journey (Survey)'
 				/>
 				<meta
-					property='description'
+					name='description'
 					content="Spill the beans on your fitness struggles! We're cooking up solutions that fit you best. Your voice, your fitness—let's make it happen!"
 				/>
 				<meta property='image' content='./seo.webp' />

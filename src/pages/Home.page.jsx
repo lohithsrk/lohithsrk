@@ -18,7 +18,7 @@ const Home = () => {
 			<Helmet>
 				<meta property='title' content='Lohith' />
 				<meta
-					property='og:description'
+					name='description'
 					content='Experienced Full Stack and Android developer, creating engaging solutions.'
 				/>
 			</Helmet>
