@@ -17,9 +17,8 @@ const Survey = () => {
 					name='description'
 					content="Spill the beans on your fitness struggles! We're cooking up solutions that fit you best. Your voice, your fitness—let's make it happen!"
 				/>
-				<meta property='image' content='./seo.webp' />
 				<meta
-					property='url'
+					name='url'
 					content='https://lohith.pro/survey/your-insights-matter'
 				/>
 			</Helmet>

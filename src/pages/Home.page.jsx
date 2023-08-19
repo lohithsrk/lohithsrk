@@ -21,6 +21,10 @@ const Home = () => {
 					name='description'
 					content='Experienced Full Stack and Android developer, creating engaging solutions.'
 				/>
+				<meta
+					name='url'
+					content='https://lohith.pro/'
+				/>
 			</Helmet>
 			<div>
 				<Header />
