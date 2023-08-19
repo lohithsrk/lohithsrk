@@ -10,7 +10,7 @@ const Survey = () => {
 			<Helmet>
 				<title>SURVEY</title>
 				<meta
-					property='title'
+					property='og:title'
 					content='Empowering Your Fitness Journey (Survey)'
 				/>
 				<meta
