@@ -16,14 +16,12 @@ const Home = () => {
 	return (
 		<>
 			<Helmet>
+				<meta name='title' content='Lohith' />
 				<meta
 					name='description'
 					content='Experienced Full Stack and Android developer, creating engaging solutions.'
 				/>
-				<meta
-					name='url'
-					content='https://lohith.pro/'
-				/>
+				<meta name='url' content='https://lohith.pro/' />
 			</Helmet>
 			<div>
 				<Header />

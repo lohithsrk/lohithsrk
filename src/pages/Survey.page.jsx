@@ -19,7 +19,7 @@ const Survey = () => {
 				/>
 				<meta
 					name='url'
-					content='https://lohith.pro/survey/your-insights-matter'
+					content='https://lohith.pro/survey/'
 				/>
 			</Helmet>
 			<div>
