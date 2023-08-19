@@ -10,8 +10,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/survey/your-insights-matter" element={<Survey />} />
+          <Route path="*" element={<div>404 PAGE NOT FOUND</div>} />
         </Routes>
       </Router>
     </div>
