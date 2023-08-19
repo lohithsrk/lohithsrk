@@ -10,19 +10,29 @@ import {
 	Work,
 	Contact
 } from '../components/home';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
 	return (
-		<div >
-			<Header />
-			<Banner />
-			<About />
-			<Services />
-			<Work />
-			<Contact />
-			<Footer />
-			<Nav />
-		</div>
+		<>
+			<Helmet>
+				<meta property='title' content='Lohith' />
+				<meta
+					property='description'
+					content='Experienced Full Stack and Android developer, creating engaging solutions.'
+				/>
+			</Helmet>
+			<div>
+				<Header />
+				<Banner />
+				<About />
+				<Services />
+				<Work />
+				<Contact />
+				<Footer />
+				<Nav />
+			</div>
+		</>
 	);
 };
 
