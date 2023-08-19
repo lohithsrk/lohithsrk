@@ -12,8 +12,16 @@ const Header = () => {
 					>
 						lohith.pro
 					</Link>
-					<Link to='contact' activeClass='active' smooth={true} offset={-200}>
+					{/* <Link to='contact' activeClass='active' smooth={true} offset={-200}>
 						<button className='btn btn-sm'>Work with me</button>
+					</Link> */}
+					<Link
+						to='/survey/your-insights-matter'
+						activeClass='active'
+						smooth={true}
+						offset={-200}
+					>
+						<button className='btn btn-sm'>Survey</button>
 					</Link>
 				</div>
 			</div>
