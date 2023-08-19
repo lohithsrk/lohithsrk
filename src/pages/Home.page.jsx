@@ -21,7 +21,6 @@ const Home = () => {
 					property='description'
 					content='Experienced Full Stack and Android developer, creating engaging solutions.'
 				/>
-				<meta property='url' content='https://lohith.pro/' />
 			</Helmet>
 			<div>
 				<Header />
