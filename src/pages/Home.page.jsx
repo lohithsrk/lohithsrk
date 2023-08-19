@@ -16,7 +16,6 @@ const Home = () => {
 	return (
 		<>
 			<Helmet>
-				<meta property='title' content='Lohith' />
 				<meta
 					name='description'
 					content='Experienced Full Stack and Android developer, creating engaging solutions.'
