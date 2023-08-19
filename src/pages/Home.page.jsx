@@ -13,7 +13,7 @@ import {
 
 const Home = () => {
 	return (
-		<div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+		<div >
 			<Header />
 			<Banner />
 			<About />
