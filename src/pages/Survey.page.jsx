@@ -8,17 +8,18 @@ const Survey = () => {
 	return (
 		<>
 			<Helmet>
+				<title>SURVEY</title>
 				<meta
-					property='og:title'
+					property='title'
 					content='Empowering Your Fitness Journey (Survey)'
 				/>
 				<meta
-					property='og:description'
+					property='description'
 					content="Spill the beans on your fitness struggles! We're cooking up solutions that fit you best. Your voice, your fitness—let's make it happen!"
 				/>
-				<meta property='og:image' content='./seo.webp' />
+				<meta property='image' content='./seo.webp' />
 				<meta
-					property='og:url'
+					property='url'
 					content='https://lohith.pro/survey/your-insights-matter'
 				/>
 			</Helmet>
