@@ -7,7 +7,7 @@ const Header = () => {
 			<div className='container mx-auto'>
 				<div className='flex justify-between items-center'>
 					<Link
-						to='home'
+						to='/home'
 						className='text-gradient font-bold text-lg cursor-pointer'
 					>
 						lohith.pro
